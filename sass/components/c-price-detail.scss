@@ -1,0 +1,234 @@
+.c-price-detail {
+    &_title {
+        color: #222;
+        font-size: 32px;
+        font-weight: 600;
+        border-bottom: 1px solid #D9D9D9;
+    }
+    &_list {
+        &_item {
+            padding: 10px 0;
+            border-bottom: 1px solid #D9D9D9;
+            &_title {
+                display: flex;
+                align-items: center;
+                &_stt {
+                    width: 62px;
+                    span {
+                        color: #666;
+                        font-size: 14px;
+                        font-weight: 700;
+                        padding: 2.9px 8.85px;
+                        border: 3px solid #666;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        margin-left: 10px;
+                    }
+                }
+                &_table {
+                    margin-left: 5px;
+                    flex: 1;
+                    table {
+                        tr {
+                            display: flex;
+                            td {
+                                color: #000;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                font-size: 16px;
+                                font-weight: 400;
+                                &:nth-child(1) {
+                                    width: 100px;
+                                }
+                                &:nth-child(2) {
+                                    padding: 0 10px;
+                                }
+                                span {
+                                    color: #FFF;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    width: 22px;
+                                    height: 22px;
+                                    background: #2B7ECA;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &_group {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    span {
+                        color: #2B7ECA;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-right: 10px;
+                    }
+                    &_edit {
+                        border-radius: 4px;
+                        border: 1px solid #2B7ECA;
+                        background: #FFF;
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                        color: #2B7ECA;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 14px; /* 100% */
+                        letter-spacing: 1.4px;
+                        padding: 10px 16px;
+                        cursor: pointer;
+                    }
+                    &_delete {
+                        border-radius: 4px;
+                        border: 1px solid #666;
+                        background: #FFF;
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                        color: #666;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 14px; /* 100% */
+                        letter-spacing: 1.4px;
+                        padding: 10px 16px;
+                        cursor: pointer;
+                    }
+                } 
+            }
+            &_detail {
+                &_space-fee {
+                    display: flex;
+                    align-items: center;
+                    &_title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 190px;
+                        span {
+                            color: #222;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                    &_content {
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 20px; /* 125% */
+                        letter-spacing: 1.6px;
+                        flex: 1;
+                        padding-left: 40px;
+                    }
+                    &_price {
+                        color: #000;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 20px; /* 100% */
+                        letter-spacing: 2px;
+                    }
+                }
+                &_coupon {
+                    display: flex;
+                    align-items: center;
+                    &_title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 190px;
+                        span {
+                            color: #E3656D;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    &_total {
+        margin-bottom: 25px;
+        &_price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #666;
+            border-top: 1px solid #666;
+            p {
+                color: #222;
+                font-size: 36px;
+                font-weight: 600;
+            }
+            span {
+                color: #000;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 20px; /* 55.556% */
+                letter-spacing: 3.6px;
+            }
+        }
+        &_sale {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            margin-right: 10px;
+            p {
+                color: #222;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            span {
+                color: #000;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 20px; /* 100% */
+                letter-spacing: 2px;
+            }
+        }
+    }
+    &_group {
+        p {
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 1.4px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        &_button {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            &_add {
+                color: #FBFAF9;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 14px; /* 100% */
+                letter-spacing: 1.4px;
+                padding: 10px 19px;
+                border-radius: 4px;
+                background: #2B7ECA;
+                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+                border: none;
+            }
+            &_continue {
+                color: #FBFAF9;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 14px; /* 100% */
+                letter-spacing: 1.4px;
+                padding: 10px 49.5px;
+                border-radius: 4px;
+                background: #194165;
+                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+                border: none;
+            }
+        }
+    }
+}

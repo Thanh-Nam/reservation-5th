@@ -1,0 +1,61 @@
+.c-coupon {
+    &_container {
+        padding: 20px 0;
+        border-bottom: 1px dashed #000;
+    }
+    &_title {
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 13px;
+    }
+    &_input {
+        display: flex;
+        gap: 10px;
+        height: auto;
+        margin-bottom: 10px;
+        input {
+            color: #222;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            padding: 7px 10px;
+            width: 330px;
+            ::placeholder {
+                color: #222;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+        button {
+            color: #FBFAF9;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 142.857% ; 
+            letter-spacing: 1.4px;
+            border-radius: 4px;
+            padding: 10px 30px;
+            background: #194165;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        }
+    }
+    &_note {
+        p {
+            color: #202020;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        ul {
+            li {
+                color: #202020;
+                font-size: 14px;
+                font-weight: 500;
+                list-style: disc;
+                margin-left: 38px;
+            }
+        }
+    }
+}

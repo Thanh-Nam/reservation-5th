@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+// ============================================================
+// 設定
+// ============================================================
+
+// HTML5の場合は「true」
+$html5 : true;
+
+// compass ブラウザサポート
+$legacy-support-for-ie6 : true;
+$legacy-support-for-ie7 : true;
+
+$experimental-support-for-webkit : true;
+$experimental-support-for-mozilla : true;
+$experimental-support-for-opera : true;
+$experimental-support-for-microsoft : true;
+$experimental-support-for-khtml : false;
+
+//ie9用 svg
+$experimental-support-for-svg: true;
+
+// 画像パス
+$imgPath : "../images/";
+
+// commonフォルダ内の画像のパス
+$commonImgPath: "../common/images/";
+
+// ページの全体の横幅
+$baseWidth : 1000px;
+
+//font family
+@font-face {
+    font-family: minionItalic;
+    src: url("../../assets/fonts/Minion-Variable-Concept-Italic.otf");
+}
+@font-face {
+    font-family: zenKaku-Bold;
+    src: url("../../assets/fonts/ZenKakuGothicAntique-Bold.ttf");
+	font-weight: 700;
+}
+@font-face {
+    font-family: kumbhSans-Regular;
+    src: url("../../assets/fonts/KumbhSans-Regular.ttf");
+	font-weight: 400;
+}
+@font-face {
+    font-family: kumbhSans-Bold;
+    src: url("../../assets/fonts/KumbhSans-Bold.ttf");
+	font-weight: 700;
+}
+
+@font-face {
+    font-family: bigCaslon;
+    src: url("../../assets/fonts/Big-Caslon.ttf");
+}
+
+
+// 標準行間
+$lineHeight : 100%;
+$lineHeightText:1.6;
+$lineHeightText2:1.8;
+
+// カラー
+$cBase:#000000;
+$cAccent:#cc9999;
+
+// 標準テキストカラー
+$textColor : #000000;
+
+// 標準リンクカラー
+$linkColor : $cBase;
+$linkColor_visit : #cc9999;
+$linkColor_active : #cc9999;
+$linkColor_hover : #cc9999;
+
+// ============================================================
+// common
+// ============================================================
+
+body{
+	color: #000;
+	font-family: 'Noto Sans JP', sans-serif;
+	background-color: #fff;
+	font-feature-settings: "halt" 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
+}//body
+
+* {
+	box-sizing: border-box;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+	transition: all .1s ease;
+	display: inline-block;
+	
+	&:hover{
+		opacity: .6;
+	}//hover
+}//a
+
+img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+table {
+	width:100%;
+}
+a:focus,
+input:focus {
+	outline: none;
+}
+
+section {
+	background: #fff;
+}
+
+.container {
+	max-width: 1380px;
+	margin: auto;
+	&tl {
+		padding: 0 16px;
+	}
+	&sp {
+		padding: 0 8px;
+	}
+}

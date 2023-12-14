@@ -1,0 +1,125 @@
+.c-plan {
+    &_title {
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &_des {
+        display: inline-block;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px;
+        background: #194165;
+        margin-bottom: 20px;
+    }
+    &_list {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        margin-right: 30px;
+        &_item {
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid #969595;
+            &_title-button {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                p {
+                    color: #2495FD;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                &_book-now {
+                    color: #FFF;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 5px;
+                    background: #A4C520;
+                    border: none;
+                }
+                &_request {
+                    color: #FFF;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 5px;
+                    background: #FBBC05;
+                    border: none;
+                    display: none;
+                }
+            }
+            &_min-time {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 10px;
+                span {
+                    color: #000;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+            &_total-time {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                margin-bottom: 32px;
+                span {
+                    color: #000;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                &_period {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+            &_price {
+                display: flex;
+                justify-content: end;
+                span {
+                    color: #000;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+            &.active {
+                background: #194165;
+                .c-plan_list_item_title-button {
+                    p {
+                        color: white;
+                    }
+                    &_book-now {
+                        display: none;
+                    }
+                    &_request {
+                        display: block;
+                    }
+                }
+                .c-plan_list_item_min-time {
+                    span {
+                        color: white;
+                    }
+                }
+                .c-plan_list_item_total-time {
+                    color: white;
+                    span {
+                        color: white;
+                    }
+                }
+                .c-plan_list_item_total-time_period {
+                    color: white;
+                }
+                .c-plan_list_item_price {
+                    span {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

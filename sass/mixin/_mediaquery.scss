@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+// ----------------------------------------------------------------------
+// MediaQuery
+// ----------------------------------------------------------------------
+
+@mixin pc {
+	@media only screen and (min-width: $width-pc + $width-scrollbar) {
+		@content;
+	}
+}
+
+@mixin lt {
+	@media only screen and (min-width: $width-laptop + $width-scrollbar) and (max-width: $width-pc + $width-scrollbar - 1) {
+		@content;
+	}
+}
+
+@mixin tl {
+	@media only screen and (min-width: $width-tablet + $width-scrollbar) and (max-width: $width-laptop + $width-scrollbar - 1) {
+		@content;
+	}
+}
+
+@mixin sp {
+	@media only screen and (min-width: $width-smartphone + $width-scrollbar) and (max-width: $width-tablet + $width-scrollbar - 1) {
+		@content;
+	}
+}
+
+
