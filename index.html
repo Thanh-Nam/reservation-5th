@@ -58,6 +58,29 @@
                         <span>34,650 円</span>
                     </div>
                 </div>
+                <div class="c-plan_list_item disabled">
+                    <div class="c-plan_list_item_title-button">
+                        <p>通常料金</p>
+                        <button class="c-plan_list_item_title-button_book-now">即決予約</button>
+                        <button class="c-plan_list_item_title-button_request">リクエスト予約</button>
+                    </div>
+                    <div class="c-plan_list_item_min-time">
+                        <span>【最低利用時間】</span>
+                        <span>3時間</span>
+                    </div>
+                    <div class="c-plan_list_item_total-time">
+                        <span>全日</span>
+                        ／
+                        <div class="c-plan_list_item_total-time_period">
+                            <span>9:00</span>
+                            ～
+                            <span>22:00</span>
+                        </div>
+                    </div>
+                    <div class="c-plan_list_item_price">
+                        <span>34,650 円</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -242,7 +265,7 @@
             <h3 class="c-price-detail_title">料金詳細</h3>
             <div class="c-price-detail_list">
                 <div class="c-price-detail_list_item">
-                    <div class="c-price-detail_list_item_title">
+                    <div class="c-price-detail_list_item_title" data-show="detail-1">
                         <div class="c-price-detail_list_item_title_stt">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
                                 <path d="M1.41 0.294922L6 4.87492L10.59 0.294922L12 1.70492L6 7.70492L0 1.70492L1.41 0.294922Z" fill="black"/>
@@ -282,7 +305,7 @@
                             <button class="c-price-detail_list_item_title_group_delete">削除</button>
                         </div>
                     </div>
-                    <div class="c-price-detail_list_item_detail">
+                    <div class="c-price-detail_list_item_detail" id="detail-1">
                         <div class="c-price-detail_list_item_detail_space-fee">
                             <h6 class="c-price-detail_list_item_detail_space-fee_title"><span>スペース料金</span><span>：</span></h6>
                             <p class="c-price-detail_list_item_detail_space-fee_content">休日料金プラン</p>
@@ -292,6 +315,97 @@
                             <h6 class="c-price-detail_list_item_detail_coupon_title"><span>クーポン</span><span>：</span></h6>
                             <div class="c-price-detail_list_item_detail_coupon_content"><p>閉店セール割引クーポン</p><span>（10％off）</span></div>
                             <span class="c-price-detail_list_item_detail_coupon_price">-10,395 円</span>
+                        </div>
+                        <div class="c-price-detail_list_item_detail_compensation">
+                            <h6 class="c-price-detail_list_item_detail_compensation_title">
+                                <div>
+                                    <span>安心補償</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z" fill="#2B7ECA"/>
+                                    </svg>
+                                </div>
+                                <span>：</span>
+                            </h6>
+                            <span class="c-price-detail_list_item_detail_compensation_price">5,500 円</span>
+                        </div>
+                        <div class="c-price-detail_list_item_detail_free-option">
+                            <h6 class="c-price-detail_list_item_detail_free-option_title"><span>無料オプション</span><span>：</span></h6>
+                            <div class="c-price-detail_list_item_detail_free-option_content">
+                                <div class="c-price-detail_list_item_detail_free-option_content_row">
+                                    <p class="c-price-detail_list_item_detail_free-option_content_row_title">追加椅子</p>
+                                    <div class="c-price-detail_list_item_detail_free-option_content_row_group">
+                                        <span class="c-price-detail_list_item_detail_free-option_content_row_group_item-1">0 円 x</span> 
+                                        <span class="c-price-detail_list_item_detail_free-option_content_row_group_item-2"> &ensp; &ensp; 24 脚</span>
+                                    </div>
+                                    <div class="c-price-detail_list_item_detail_free-option_content_row_price">0 円</div>
+                                </div>
+                                <div class="c-price-detail_list_item_detail_free-option_content_row">
+                                    <p class="c-price-detail_list_item_detail_free-option_content_row_title">マイクスタンド</p>
+                                    <div class="c-price-detail_list_item_detail_free-option_content_row_group">
+                                        <span class="c-price-detail_list_item_detail_free-option_content_row_group_item-1">0 円 x</span> 
+                                        <span class="c-price-detail_list_item_detail_free-option_content_row_group_item-2"> &ensp; &ensp; 1 個</span>
+                                    </div>
+                                    <div class="c-price-detail_list_item_detail_free-option_content_row_price">0 円</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-price-detail_list_item_detail_charged-option">
+                            <h6 class="c-price-detail_list_item_detail_charged-option_title"><span>有料オプション</span><span>：</span></h6>
+                            <div class="c-price-detail_list_item_detail_charged-option_content">
+                                <div class="c-price-detail_list_item_detail_charged-option_content_row">
+                                    <p class="c-price-detail_list_item_detail_charged-option_content_row_title">ゴミ袋セット</p>
+                                    <div class="c-price-detail_list_item_detail_charged-option_content_row_group">
+                                        <span class="c-price-detail_list_item_detail_charged-option_content_row_group_item-1">1,000 円 x</span> 
+                                        <span class="c-price-detail_list_item_detail_charged-option_content_row_group_item-2"> &ensp; &ensp; 2 セット</span>
+                                    </div>
+                                    <div class="c-price-detail_list_item_detail_charged-option_content_row_price">2,000 円</div>
+                                </div>
+                                <div class="c-price-detail_list_item_detail_charged-option_content_row">
+                                    <p class="c-price-detail_list_item_detail_charged-option_content_row_title">無線マイク2本セット</p>
+                                    <div class="c-price-detail_list_item_detail_charged-option_content_row_group">
+                                        <span class="c-price-detail_list_item_detail_charged-option_content_row_group_item-1">5,500 円 x</span> 
+                                        <span class="c-price-detail_list_item_detail_charged-option_content_row_group_item-2"> &ensp; &ensp; 1 セット</span>
+                                    </div>
+                                    <div class="c-price-detail_list_item_detail_charged-option_content_row_price">5,500 円</div>
+                                </div>
+                                <div class="c-price-detail_list_item_detail_charged-option_content_row">
+                                    <p class="c-price-detail_list_item_detail_charged-option_content_row_title">バーカウンター</p>
+                                    <div class="c-price-detail_list_item_detail_charged-option_content_row_group">
+                                        <span class="c-price-detail_list_item_detail_charged-option_content_row_group_item-1">8,800 円 x</span> 
+                                        <span class="c-price-detail_list_item_detail_charged-option_content_row_group_item-2"> &ensp; &ensp; 3 時間 （ 10:00 - 13:00 ）</span>
+                                    </div>
+                                    <div class="c-price-detail_list_item_detail_charged-option_content_row_price">26,400 円</div>
+                                </div>
+                                <div class="c-price-detail_list_item_detail_charged-option_content_row">
+                                    <p class="c-price-detail_list_item_detail_charged-option_content_row_title">2F控室</p>
+                                    <div class="c-price-detail_list_item_detail_charged-option_content_row_group">
+                                        <span class="c-price-detail_list_item_detail_charged-option_content_row_group_item-1">11,000 円 x</span> 
+                                        <span class="c-price-detail_list_item_detail_charged-option_content_row_group_item-2"> &ensp; &ensp; 3 時間 （ 10:00 - 13:00 ）</span>
+                                    </div>
+                                    <div class="c-price-detail_list_item_detail_charged-option_content_row_price">33,000 円</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-price-detail_list_item_detail_management-fee">
+                            <h6 class="c-price-detail_list_item_detail_management-fee_title">
+                                <div>
+                                    <span>維持管理費</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z" fill="#2B7ECA"/>
+                                    </svg>
+                                </div>
+                                <span>：</span>
+                            </h6>
+                            <p class="c-price-detail_list_item_detail_management-fee_content">利用料金の5％</p>
+                            <span class="c-price-detail_list_item_detail_management-fee_price">82,978 円</span>
+                        </div>
+                        <div class="c-price-detail_list_item_detail_subtotal">
+                            <h6 class="c-price-detail_list_item_detail_subtotal_title"><span>小計</span><span>：</span></h6>
+                            <span class="c-price-detail_list_item_detail_subtotal_price">165,955 円</span>
+                        </div>
+                        <div class="c-price-detail_list_item_detail_sale-tax">
+                            <h6 class="c-price-detail_list_item_detail_sale-tax_title"><span>消費税（10％内税）</span><span>：</span></h6>
+                            <span class="c-price-detail_list_item_detail_sale-tax_price">（ 17,425円 ）</span>
                         </div>
                     </div>
                 </div>

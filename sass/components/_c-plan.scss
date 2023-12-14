@@ -120,6 +120,40 @@
                     }
                 }
             }
+            &.disabled {
+                border: 1px solid #E9E9E9;
+                background: #E9E9E9;
+                .c-plan_list_item_title-button {
+                    p {
+                        color: #6B6B72;
+                    }
+                    &_book-now {
+                        display: none;
+                    }
+                    &_request {
+                        display: block;
+                    }
+                }
+                .c-plan_list_item_min-time {
+                    span {
+                        color: #6B6B72;
+                    }
+                }
+                .c-plan_list_item_total-time {
+                    color: #6B6B72;
+                    span {
+                        color: #6B6B72;
+                    }
+                }
+                .c-plan_list_item_total-time_period {
+                    color: #6B6B72;
+                }
+                .c-plan_list_item_price {
+                    span {
+                        color: #6B6B72;
+                    }
+                }
+            }
         }
     }
 }
